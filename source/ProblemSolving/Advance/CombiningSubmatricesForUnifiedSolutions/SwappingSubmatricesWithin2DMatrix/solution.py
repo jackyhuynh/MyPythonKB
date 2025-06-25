@@ -1,7 +1,4 @@
 def submatrix_swap(matrix, coord_S1, coord_S2):
-    # TODO: Implement the function that swaps coord_S1 and coord_S2 in the matrix
-    pass
-
     # submatrix_swap(matrix, coord_S1=[0, 2, 2, 4], coord_S2=[2, 4, 0, 2])
     # M =  [[1, 2, 3, 4, 5],
     #       [6, 7, 8, 9, 10],
