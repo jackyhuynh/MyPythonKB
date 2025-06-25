@@ -59,4 +59,3 @@ def zigzag_traverse_and_primes(matrix):
             prime_list[i] = traversed_list[i]
 
     return prime_list
-

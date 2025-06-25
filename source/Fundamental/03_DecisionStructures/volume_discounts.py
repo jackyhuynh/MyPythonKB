@@ -50,6 +50,7 @@ START Program
 END Program
 """
 
+
 # Name: [Your Name]
 # Program Status: Complete
 # Description: This program calculates the discount and total purchase amount for software packages
@@ -60,8 +61,8 @@ def main():
     PACKAGE_PRICE = 149.00
     DISCOUNT_RATE_10_49 = 0.10  # 10% discount for 10-49 packages
     DISCOUNT_RATE_50_99 = 0.20  # 20% discount for 50-99 packages
-    DISCOUNT_RATE_100_149 = 0.30 # 30% discount for 100-149 packages
-    DISCOUNT_RATE_150_PLUS = 0.40 # 40% discount for 150 or more packages
+    DISCOUNT_RATE_100_149 = 0.30  # 30% discount for 100-149 packages
+    DISCOUNT_RATE_150_PLUS = 0.40  # 40% discount for 150 or more packages
 
     # Variable declarations and initializations
     num_packages = 0
@@ -74,7 +75,7 @@ def main():
         num_packages = int(input("Enter the number of packages purchased: "))
     except ValueError:
         print("Invalid input. Please enter a whole number for the quantity.")
-        return # Exit the program if input is not a valid integer
+        return  # Exit the program if input is not a valid integer
 
     # Process: Determine the discount based on the number of packages
     if num_packages >= 150:
@@ -101,6 +102,7 @@ def main():
     # Dollar amounts are rounded to 2 decimal places and display dollar signs
     print(f"Discount Amount: $ {discount_amount:,.2f}")
     print(f"Total Amount: $ {total_purchase_amount:,.2f}")
+
 
 # This ensures that the main function is called only when the script is executed directly
 if __name__ == "__main__":

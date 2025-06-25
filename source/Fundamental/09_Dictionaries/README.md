@@ -4,17 +4,23 @@ Here's the content for Chapters 9 through 15, following your detailed outline:
 
 ## Chapter 9: Dictionaries and Sets
 
-This chapter introduces two more powerful and flexible built-in data structures in Python: dictionaries and sets. Both offer unique ways to store and retrieve data efficiently.
+This chapter introduces two more powerful and flexible built-in data structures in Python: dictionaries and sets. Both
+offer unique ways to store and retrieve data efficiently.
 
 ### 1. Dictionaries
 
-Dictionaries are unordered collections of *key-value pairs*. They are mutable, meaning their contents can be changed after creation, and are highly optimized for retrieving values based on their keys. Think of a real-world dictionary where you look up a word (the key) to find its definition (the value).
+Dictionaries are unordered collections of *key-value pairs*. They are mutable, meaning their contents can be changed
+after creation, and are highly optimized for retrieving values based on their keys. Think of a real-world dictionary
+where you look up a word (the key) to find its definition (the value).
 
 #### Creating and Using Dictionaries
 
-Dictionaries are created using curly braces `{}` with key-value pairs separated by colons `:`. Each key-value pair is separated by a comma. Keys must be immutable (e.g., strings, numbers, tuples), and unique within a dictionary. Values can be of any data type.
+Dictionaries are created using curly braces `{}` with key-value pairs separated by colons `:`. Each key-value pair is
+separated by a comma. Keys must be immutable (e.g., strings, numbers, tuples), and unique within a dictionary. Values
+can be of any data type.
 
 **Creating a dictionary:**
+
 ```python
 # Empty dictionary
 empty_dict = {}
@@ -61,7 +67,8 @@ print(student_info)
         print(student_info)
         # Output: {'name': 'Alice', 'age': 21, 'major': 'Computer Science', 'grades': {'math': 95, 'physics': 88}}
         ```
-    * `pop(key)` method: Removes the key-value pair and returns the value. Raises `KeyError` if the key is not found, unless a default value is provided.
+    * `pop(key)` method: Removes the key-value pair and returns the value. Raises `KeyError` if the key is not found,
+      unless a default value is provided.
         ```python
         major_removed = student_info.pop("major")
         print(major_removed) # Output: Computer Science
@@ -79,7 +86,8 @@ Dictionaries provide several useful methods for interacting with their keys, val
 
 #### Common Dictionary Methods like `keys()`, `values()`, `items()`, and `get()`
 
-* `keys()`: Returns a *view object* that displays a list of all the keys in the dictionary. This view reflects any changes made to the dictionary.
+* `keys()`: Returns a *view object* that displays a list of all the keys in the dictionary. This view reflects any
+  changes made to the dictionary.
 
     ```python
     my_dict = {"a": 1, "b": 2, "c": 3}
@@ -104,7 +112,9 @@ Dictionaries provide several useful methods for interacting with their keys, val
         print(f"Key: {key}, Value: {value}")
     ```
 
-* `get(key, default)`: Returns the value for the specified `key` if the key is in the dictionary. If the key is not found, it returns `None` by default, or the `default` value if provided. This is a safer way to access values than `[]` as it doesn't raise a `KeyError`.
+* `get(key, default)`: Returns the value for the specified `key` if the key is in the dictionary. If the key is not
+  found, it returns `None` by default, or the `default` value if provided. This is a safer way to access values than
+  `[]` as it doesn't raise a `KeyError`.
 
     ```python
     person = {"name": "Charlie", "age": 25}
@@ -117,13 +127,16 @@ Other useful dictionary methods include `clear()`, `copy()`, `update()`, and `po
 
 ### 3. Sets
 
-Sets are unordered collections of *unique* elements. They are mutable, but their elements must be immutable (like dictionary keys). Sets are primarily used for membership testing and eliminating duplicate entries from sequences.
+Sets are unordered collections of *unique* elements. They are mutable, but their elements must be immutable (like
+dictionary keys). Sets are primarily used for membership testing and eliminating duplicate entries from sequences.
 
 #### Creating and Using Sets
 
-Sets are created using curly braces `{}` or the `set()` constructor. Note that an empty set must be created with `set()`, not `{}` (as `{}` creates an empty dictionary).
+Sets are created using curly braces `{}` or the `set()` constructor. Note that an empty set must be created with
+`set()`, not `{}` (as `{}` creates an empty dictionary).
 
 **Creating a set:**
+
 ```python
 # Empty set
 empty_set = set()
@@ -161,7 +174,8 @@ Sets provide efficient methods for performing standard mathematical set operatio
     print(set1.intersection(set2)) # Output: {3}
     ```
 
-* **Difference (`-` or `difference()`):** Returns a new set containing elements that are in the first set but not in the second.
+* **Difference (`-` or `difference()`):** Returns a new set containing elements that are in the first set but not in the
+  second.
 
     ```python
     difference_set = set1 - set2
@@ -169,7 +183,8 @@ Sets provide efficient methods for performing standard mathematical set operatio
     print(set1.difference(set2)) # Output: {1, 2}
     ```
 
-* **Symmetric Difference (`^` or `symmetric_difference()`):** Returns a new set containing elements that are in either of the sets, but not in both.
+* **Symmetric Difference (`^` or `symmetric_difference()`):** Returns a new set containing elements that are in either
+  of the sets, but not in both.
 
     ```python
     symmetric_difference_set = set1 ^ set2
@@ -206,14 +221,16 @@ for fruit in fruits:
     # my_set.remove(5) # This would raise a KeyError
     ```
 
-* `discard(element)`: Removes an element from the set if it is present. Does *not* raise an error if the element is not found.
+* `discard(element)`: Removes an element from the set if it is present. Does *not* raise an error if the element is not
+  found.
     ```python
     my_set.discard(2)
     my_set.discard(5) # No error
     print(my_set) # Output: {1}
     ```
 
-* `pop()`: Removes and returns an arbitrary element from the set. Raises `KeyError` if the set is empty. Since sets are unordered, you cannot predict which element will be removed.
+* `pop()`: Removes and returns an arbitrary element from the set. Raises `KeyError` if the set is empty. Since sets are
+  unordered, you cannot predict which element will be removed.
 
     ```python
     colors = {"red", "green", "blue"}
@@ -228,4 +245,5 @@ for fruit in fruits:
     print(colors) # Output: set()
     ```
 
-Sets are incredibly useful for tasks like efficiently checking for duplicates, performing unique operations, and optimizing membership tests where the order of elements isn't important.
+Sets are incredibly useful for tasks like efficiently checking for duplicates, performing unique operations, and
+optimizing membership tests where the order of elements isn't important.

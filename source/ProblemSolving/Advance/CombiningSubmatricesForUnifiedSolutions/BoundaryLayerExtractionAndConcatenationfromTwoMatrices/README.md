@@ -25,6 +25,7 @@ The function signature should be:
 ```python
 def matrix_boundary_concatenation(matrix_A, matrix_B, n):
 ```
+
 The elements in the input matrices can be any integer between -100 and 100.
 
 Example
@@ -33,22 +34,25 @@ Consider the following input to our function:
 
 ```python
 matrix_A = [[1, 2, 3, 4],
-[5, 6, 7, 8],
-[9, 10, 11, 12],
-[13, 14, 15, 16]]
+            [5, 6, 7, 8],
+            [9, 10, 11, 12],
+            [13, 14, 15, 16]]
 ```
+
 ```python
 matrix_B = [[17, 18, 19, 20],
-[21, 22, 23, 24],
-[25, 26, 27, 28],
-[29, 30, 31, 32]]
+            [21, 22, 23, 24],
+            [25, 26, 27, 28],
+            [29, 30, 31, 32]]
 ```
+
 n = 2
 Our function matrix_boundary_concatenation(matrix_A, matrix_B, n) should return:
 
 ```python
 [1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, 5, 6, 7, 11, 10, 17, 18, 19, 20, 24, 28, 32, 31, 30, 29, 25, 21, 22, 23, 27, 26]
 ```
+
 Explanation:
 
 In matrix_A, the first boundary layer is composed of the elements 1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, and 5, taken in

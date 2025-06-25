@@ -4,7 +4,7 @@
 # The user has specified the exact amount of each ingredient required for
 # a single serving.
 TOMATO_SAUCE_CUPS_PER_SERVING = 0.5
-TOMATO_PASTE_CUPS_PER_SERVING = 1/12
+TOMATO_PASTE_CUPS_PER_SERVING = 1 / 12
 GARLIC_CLOVES_PER_SERVING = 0.5
 OREGANO_TBSP_PER_SERVING = 0.25
 

@@ -1,5 +1,6 @@
 # Starting Out with Python
-- ISBN: 9780136719199 
+
+- ISBN: 9780136719199
 - By: Tony Gaddis
 
 ### Chapter 1: Introduction to Computers and Programming
@@ -22,7 +23,8 @@
 ### Chapter 2: Input, Processing, and Output
 
 1. **Designing a Program**:
-    - Steps involved in designing a program: defining the problem, planning the solution, coding, testing, and debugging.
+    - Steps involved in designing a program: defining the problem, planning the solution, coding, testing, and
+      debugging.
     - Importance of writing algorithms before coding.
 
 2. **Input, Processing, and Output**:

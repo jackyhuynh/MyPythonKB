@@ -88,7 +88,7 @@ print("The sum is:", sum_value) # Output: The sum is: 15
 print("Another sum:", add_numbers(20, 30)) # Output: Another sum: 50
 ```
 
-  A function can return any Python object, including numbers, strings, lists, or even other functions.
+A function can return any Python object, including numbers, strings, lists, or even other functions.
 
 ### 4\. Passing Arguments to Functions
 

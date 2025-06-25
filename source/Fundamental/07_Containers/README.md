@@ -1,4 +1,3 @@
-
 ## Chapter 7: Lists and Tuples
 
 In previous chapters, we've dealt primarily with single pieces of data. However, real-world problems often involve
@@ -37,8 +36,8 @@ mixed_data = ["Alice", 25, 1.75, True]
 my_list = ["a", "b", "c", "d", "e"]
 print(my_list[0])  # Output: a (first element)
 print(my_list[2])  # Output: c (third element)
-print(my_list[-1]) # Output: e (last element)
-print(my_list[-3]) # Output: c (third from last)
+print(my_list[-1])  # Output: e (last element)
+print(my_list[-3])  # Output: c (third from last)
 ```
 
 * **Modifying list elements**: Since lists are mutable, you can change the value of an element by assigning a new value
@@ -46,7 +45,7 @@ print(my_list[-3]) # Output: c (third from last)
 
 ```python
 scores = [85, 92, 78, 95]
-scores[1] = 88 # Change the second score (at index 1)
+scores[1] = 88  # Change the second score (at index 1)
 print(scores)  # Output: [85, 88, 78, 95]
 ```
 
@@ -72,16 +71,16 @@ lists.
 
 ```python
 my_shopping_list = ["milk", "bread"]
-my_shopping_list.append("eggs")       # ['milk', 'bread', 'eggs']
-my_shopping_list.insert(0, "yogurt") # ['yogurt', 'milk', 'bread', 'eggs']
-my_shopping_list.remove("bread")     # ['yogurt', 'milk', 'eggs']
-last_item = my_shopping_list.pop()    # 'eggs' (list is now ['yogurt', 'milk'])
+my_shopping_list.append("eggs")  # ['milk', 'bread', 'eggs']
+my_shopping_list.insert(0, "yogurt")  # ['yogurt', 'milk', 'bread', 'eggs']
+my_shopping_list.remove("bread")  # ['yogurt', 'milk', 'eggs']
+last_item = my_shopping_list.pop()  # 'eggs' (list is now ['yogurt', 'milk'])
 print(my_shopping_list)
 
 numbers = [3, 1, 4, 1, 5, 9, 2]
-numbers.sort()                     # [1, 1, 2, 3, 4, 5, 9]
-numbers.reverse()                  # [9, 5, 4, 3, 2, 1, 1]
-print(numbers.count(1))            # 2
+numbers.sort()  # [1, 1, 2, 3, 4, 5, 9]
+numbers.reverse()  # [9, 5, 4, 3, 2, 1, 1]
+print(numbers.count(1))  # 2
 ```
 
 * **Using functions like `len()`, `min()`, `max()`, and `sum()` with lists**:
@@ -95,10 +94,10 @@ print(numbers.count(1))            # 2
 
 ```python
 data = [10, 20, 30, 40, 50]
-print(len(data))   # Output: 5
-print(min(data))   # Output: 10
-print(max(data))   # Output: 50
-print(sum(data))   # Output: 150
+print(len(data))  # Output: 5
+print(min(data))  # Output: 10
+print(max(data))  # Output: 50
+print(sum(data))  # Output: 150
 ```
 
 ### 3\. Working with Lists
@@ -122,10 +121,10 @@ for index, student in enumerate(students):
 ```python
 my_numbers = [10, 20, 30, 40, 50, 60]
 print(my_numbers[1:4])  # Output: [20, 30, 40] (from index 1 up to, but not including, index 4)
-print(my_numbers[:3])   # Output: [10, 20, 30] (from beginning up to index 3)
-print(my_numbers[2:])   # Output: [30, 40, 50, 60] (from index 2 to the end)
+print(my_numbers[:3])  # Output: [10, 20, 30] (from beginning up to index 3)
+print(my_numbers[2:])  # Output: [30, 40, 50, 60] (from index 2 to the end)
 print(my_numbers[::2])  # Output: [10, 30, 50] (every second element)
-print(my_numbers[::-1]) # Output: [60, 50, 40, 30, 20, 10] (reverse the list)
+print(my_numbers[::-1])  # Output: [60, 50, 40, 30, 20, 10] (reverse the list)
 ```
 
 * **List comprehensions**: A concise way to create new lists from existing iterables. They often provide a more readable
@@ -135,16 +134,16 @@ print(my_numbers[::-1]) # Output: [60, 50, 40, 30, 20, 10] (reverse the list)
 # Using a for loop to create a list of squares
 squares = []
 for x in range(1, 6):
-    squares.append(x**2)
-print(squares) # Output: [1, 4, 9, 16, 25]
+    squares.append(x ** 2)
+print(squares)  # Output: [1, 4, 9, 16, 25]
 
 # Equivalent list comprehension
-squares_comp = [x**2 for x in range(1, 6)]
-print(squares_comp) # Output: [1, 4, 9, 16, 25]
+squares_comp = [x ** 2 for x in range(1, 6)]
+print(squares_comp)  # Output: [1, 4, 9, 16, 25]
 
 # List comprehension with a condition
 even_numbers = [x for x in range(1, 11) if x % 2 == 0]
-print(even_numbers) # Output: [2, 4, 6, 8, 10]
+print(even_numbers)  # Output: [2, 4, 6, 8, 10]
 ```
 
 ### 4\. Tuples
@@ -166,13 +165,13 @@ are **immutable**, meaning once a tuple is created, its elements cannot be chang
 ```python
 # Creating tuples
 empty_tuple = ()
-single_item_tuple = (1,) # Comma is required for single-item tuples
+single_item_tuple = (1,)  # Comma is required for single-item tuples
 coordinates = (10.0, 20.5)
 employee_record = ("John Doe", "Marketing", 55000)
 
 # Accessing tuple elements (same as lists, by index)
-print(coordinates[0])    # Output: 10.0
-print(employee_record[1]) # Output: Marketing
+print(coordinates[0])  # Output: 10.0
+print(employee_record[1])  # Output: Marketing
 
 # Attempting to modify (will raise an error)
 # employee_record[0] = "Jane Doe" # TypeError: 'tuple' object does not support item assignment
@@ -187,27 +186,27 @@ Many operations that work with sequences apply to both lists and tuples:
 ```python
 list1 = [1, 2]
 list2 = [3, 4]
-combined_list = list1 + list2 # [1, 2, 3, 4]
+combined_list = list1 + list2  # [1, 2, 3, 4]
 
 tuple1 = (1, 2)
 tuple2 = (3, 4)
-combined_tuple = tuple1 + tuple2 # (1, 2, 3, 4)
+combined_tuple = tuple1 + tuple2  # (1, 2, 3, 4)
 ```
 
 * **Repetition**: Use the `*` operator to repeat a list or tuple multiple times.
 
 ```python
-repeated_list = [0] * 5     # [0, 0, 0, 0, 0]
-repeated_tuple = ("hi",) * 3 # ('hi', 'hi', 'hi')
+repeated_list = [0] * 5  # [0, 0, 0, 0, 0]
+repeated_tuple = ("hi",) * 3  # ('hi', 'hi', 'hi')
 ```
 
 * **Membership testing**: Use the `in` and `not in` operators to check if an item exists within a list or tuple.
 
 ```python
 fruits = ["apple", "orange"]
-print("apple" in fruits) # True
+print("apple" in fruits)  # True
 data = [10, 20, 50]
-print(50 not in data)   # False
+print(50 not in data)  # False
 ```
 
 * **Min, Max, Sum, Len**: As seen, `len()`, `min()`, `max()`, and `sum()` also work for tuples.
@@ -221,8 +220,8 @@ print(50 not in data)   # False
 
 ```python
 my_list = [1, 2, 3]
-my_tuple = tuple(my_list) # (1, 2, 3)
+my_tuple = tuple(my_list)  # (1, 2, 3)
 
 my_tuple2 = ("a", "b", "c")
-my_list2 = list(my_tuple2) # ['a', 'b', 'c']
+my_list2 = list(my_tuple2)  # ['a', 'b', 'c']
 ```

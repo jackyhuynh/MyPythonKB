@@ -101,8 +101,8 @@ with open("my_data.txt", "r") as f: # Using 'with' statement for auto-closing
       print(f"Line: {line.strip()}") # .strip() removes leading/trailing whitespace like newline chars
 ```
 
-  The `with open(...) as ...:` statement is the preferred way to handle files in Python. It ensures that the file is
-  automatically closed, even if errors occur, preventing resource leaks.
+The `with open(...) as ...:` statement is the preferred way to handle files in Python. It ensures that the file is
+automatically closed, even if errors occur, preventing resource leaks.
 
 ### 3\. Exceptions
 

@@ -8,6 +8,7 @@ column of sub_A, alternately include a column from sub_A and a column from sub_B
 are included.
 
 For example, if A is:
+
 ```python
 [[1, 2, 3, 4],
 [5, 6, 7, 8],
@@ -21,10 +22,12 @@ and B is:
 [14, 15, 16],
 [17, 18, 19]]
 ```
+
 If we select 2x2 submatrices from each (comprising the 2nd to the 3rd rows and the 2nd to the 3rd columns from A, and
 the 1st to the 2nd rows and the 1st to the 2nd columns from B), their interleaved combination would look like this:
 
 Copy to clipboard
+
 ```python
 [[6, 11, 7, 12],
 [10, 14, 11, 15]]

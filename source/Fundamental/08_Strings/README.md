@@ -35,24 +35,31 @@ Despite their immutability, strings offer a rich set of operations and built-in 
 **Common Operations:**
 
 * **Concatenation:** Joining strings together using the `+` operator.
+
 ```python
 greeting = "Hello"
 name = "Alice"
 full_message = greeting + ", " + name + "!"
 print(full_message) # Output: Hello, Alice!
 ```
+
 * **Repetition:** Repeating a string multiple times using the `*` operator.
+
 ```python
 separator = "-" * 10
 print(separator) # Output: ----------
 ```
+
 * **Length:** Getting the number of characters in a string using the `len()` function.
+
 ```python
 text = "Python"
 length = len(text)
 print(length) # Output: 6
 ```
+
 * **Membership (in/not in):** Checking if a substring exists within a string.
+
 ```python
 sentence = "The quick brown fox"
 print("quick" in sentence)    # Output: True
@@ -113,7 +120,7 @@ print(sentence.find("the", 20))  # Output: 31 (finds 'the' after index 20)
 ```
 
 * `replace(old, new, count)`: Returns a new string with all occurrences of `old` replaced by `new`. The optional `count`
-argument specifies the maximum number of replacements.
+  argument specifies the maximum number of replacements.
 
 ```python
 text = "Hello world, hello Python!"
@@ -125,7 +132,7 @@ print(another_text) # Output: Hi world, hello Python!
 ```
 
 * `split(separator)`: Splits the string into a list of substrings based on the `separator`. If `separator` is not
-specified, it splits by whitespace.
+  specified, it splits by whitespace.
 
 ```python
 data = "apple,banana,cherry"

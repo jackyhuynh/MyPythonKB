@@ -29,6 +29,7 @@ main function:
 
 """
 
+
 # Define function Spaghetti Sauce Caculator(number_of_serving -> #):
 #     tomato_sauce is equal to # / 2
 #     cup_of_tomato_paste is equal to # / 12
@@ -37,8 +38,8 @@ main function:
 #     return tomato_sauce, cup_of_tomato_paste, glove_of_garlic, tablespoon_oregano
 
 
-def calculate_spaghetti_sauce (number_of_serving):
-    tomato_sauce =  number_of_serving / 2
+def calculate_spaghetti_sauce(number_of_serving):
+    tomato_sauce = number_of_serving / 2
     cup_of_tomato_paste = number_of_serving / 12
     glove_of_garlic = number_of_serving / 2
     tablespoon_oregano = number_of_serving / 4
@@ -46,10 +47,11 @@ def calculate_spaghetti_sauce (number_of_serving):
 
 
 if __name__ == "__main__":
-    number_of_serving= float(input("Enter the number of serving spaghetti sauce you want to make: "))
+    number_of_serving = float(input("Enter the number of serving spaghetti sauce you want to make: "))
 
     # Calculate the total and average cost
-    total_tomato_sauce, total_cup_of_tomato_paste, total_glove_of_garlic, total_tablespoon_oregano = calculate_spaghetti_sauce(number_of_serving)
+    total_tomato_sauce, total_cup_of_tomato_paste, total_glove_of_garlic, total_tablespoon_oregano = calculate_spaghetti_sauce(
+        number_of_serving)
     print(f"To make {number_of_serving} of spaghetti sauce you will need:")
     print(f"{total_tomato_sauce} cup of tomato sauce")
     print(f"{total_tablespoon_oregano} tablespoon of oregano")

@@ -1,6 +1,7 @@
 # My Python KB
 
 ## Getting Started
+
 - **Python Fundamental**
 
 ## Resources
@@ -13,8 +14,7 @@ We'll use Python for programming. Download the Python interpreter to your comput
 higher is acceptable, avoid 2.x.xx versions. Online students must also download IDLE or another Python IDE.
 
 - [Python IDLE](https://docs.python.org/3/library/idle.html)
-- [Example of Python IDE](https://www.jetbrains.com/pycharm/download/?section=mac) 
-
+- [Example of Python IDE](https://www.jetbrains.com/pycharm/download/?section=mac)
 
 ### Test linter local before push:
 

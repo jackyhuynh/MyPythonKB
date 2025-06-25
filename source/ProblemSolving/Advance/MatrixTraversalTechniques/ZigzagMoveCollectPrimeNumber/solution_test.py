@@ -1,4 +1,5 @@
 import unittest
+
 from solution import zigzag_traverse_and_primes
 
 

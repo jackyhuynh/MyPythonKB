@@ -1,6 +1,8 @@
 """
 This module calculates the total and average cost of a hamburger, fries, and shake.
 """
+
+
 # comment
 # create function
 # concept of input, output, processing
@@ -27,6 +29,7 @@ def calculate_costs(hamburger, fries, shake):
     total = hamburger + fries + shake
     average = total / 3
     return total, average
+
 
 if __name__ == "__main__":
     # Input statements to get the costs of the items
