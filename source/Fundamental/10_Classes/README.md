@@ -46,7 +46,7 @@ class Dog:
         # Instance attributes (unique to each instance)
         self.name = name
         self.breed = breed
-        self.is_sitting = False # Default state
+        self.is_sitting = False  # Default state
 
     # Instance method
     def bark(self):
@@ -59,19 +59,20 @@ class Dog:
         else:
             return f"{self.name} is already sitting."
 
+
 # Creating objects (instances) of the Dog class
 dog1 = Dog("Buddy", "Golden Retriever")
 dog2 = Dog("Lucy", "Labrador")
 
 # Accessing attributes
-print(dog1.name)    # Output: Buddy
-print(dog2.breed)   # Output: Labrador
-print(dog1.species) # Output: Canis familiaris (accessing class attribute)
+print(dog1.name)  # Output: Buddy
+print(dog2.breed)  # Output: Labrador
+print(dog1.species)  # Output: Canis familiaris (accessing class attribute)
 
 # Calling methods
 print(dog1.bark())  # Output: Buddy says Woof!
-print(dog2.sit())   # Output: Lucy is now sitting.
-print(dog2.sit())   # Output: Lucy is already sitting.
+print(dog2.sit())  # Output: Lucy is now sitting.
+print(dog2.sit())  # Output: Lucy is already sitting.
 ```
 
 #### The `__init__` Method and Instance Attributes
@@ -106,6 +107,7 @@ class Circle:
         import math
         return 2 * math.pi * self.radius
 
+
 # Create an instance
 my_circle = Circle(5)
 
@@ -137,37 +139,40 @@ is-a" relationship between classes (e.g., a "Dog is a Mammal").
 To inherit from a class, you specify the parent class in parentheses after the subclass name.
 
 ```python
-class Animal: # Parent class
+class Animal:  # Parent class
     def __init__(self, name):
         self.name = name
 
     def speak(self):
         return "Generic animal sound"
 
-class Dog(Animal): # Dog is a subclass of Animal
+
+class Dog(Animal):  # Dog is a subclass of Animal
     def __init__(self, name, breed):
-        super().__init__(name) # Call the parent class's __init__ method
+        super().__init__(name)  # Call the parent class's __init__ method
         self.breed = breed
 
-    def speak(self): # Overriding the speak method
+    def speak(self):  # Overriding the speak method
         return f"{self.name} barks!"
 
     def fetch(self, item):
         return f"{self.name} fetches the {item}."
 
-class Cat(Animal): # Cat is also a subclass of Animal
-    def speak(self): # Overriding the speak method
+
+class Cat(Animal):  # Cat is also a subclass of Animal
+    def speak(self):  # Overriding the speak method
         return f"{self.name} meows!"
+
 
 # Create instances
 animal = Animal("Creature")
 dog = Dog("Rex", "German Shepherd")
 cat = Cat("Whiskers")
 
-print(animal.speak()) # Output: Generic animal sound
-print(dog.speak())    # Output: Rex barks!
-print(cat.speak())    # Output: Whiskers meows!
-print(dog.fetch("ball")) # Output: Rex fetches the ball.
+print(animal.speak())  # Output: Generic animal sound
+print(dog.speak())  # Output: Rex barks!
+print(cat.speak())  # Output: Whiskers meows!
+print(dog.fetch("ball"))  # Output: Rex fetches the ball.
 ```
 
 #### Understanding the Benefits of Inheritance

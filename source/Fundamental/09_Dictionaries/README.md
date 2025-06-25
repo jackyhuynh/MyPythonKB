@@ -24,14 +24,14 @@ can be of any data type.
 ```python
 # Empty dictionary
 empty_dict = {}
-print(empty_dict) # Output: {}
+print(empty_dict)  # Output: {}
 
 # Dictionary with initial data
 student_info = {
     "name": "Alice",
     "age": 20,
     "major": "Computer Science",
-    "grades": {"math": 95, "physics": 88} # Value can be another dictionary
+    "grades": {"math": 95, "physics": 88}  # Value can be another dictionary
 }
 print(student_info)
 # Output: {'name': 'Alice', 'age': 20, 'major': 'Computer Science', 'grades': {'math': 95, 'physics': 88}}
@@ -140,16 +140,16 @@ Sets are created using curly braces `{}` or the `set()` constructor. Note that a
 ```python
 # Empty set
 empty_set = set()
-print(empty_set) # Output: set()
+print(empty_set)  # Output: set()
 
 # Set with initial elements (duplicates are automatically removed)
 numbers = {1, 2, 3, 2, 4, 1}
-print(numbers) # Output: {1, 2, 3, 4} (order is not guaranteed)
+print(numbers)  # Output: {1, 2, 3, 4} (order is not guaranteed)
 
 # Creating a set from a list
 my_list = [10, 20, 30, 20, 40]
 set_from_list = set(my_list)
-print(set_from_list) # Output: {40, 10, 20, 30}
+print(set_from_list)  # Output: {40, 10, 20, 30}
 ```
 
 #### Set Operations like Union, Intersection, and Difference

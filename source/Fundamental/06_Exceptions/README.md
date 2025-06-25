@@ -82,12 +82,12 @@ import os
 
 folder_name = "my_documents"
 if not os.path.exists(folder_name):
-  os.mkdir(folder_name)
-  print(f"Created directory: {folder_name}")
+    os.mkdir(folder_name)
+    print(f"Created directory: {folder_name}")
 
 new_file_path = os.path.join(folder_name, "report.txt")
 with open(new_file_path, "w") as f:
-  f.write("This is a report in a new folder.")
+    f.write("This is a report in a new folder.")
 print(f"File created at: {new_file_path}")
 ```
 
@@ -96,9 +96,9 @@ print(f"File created at: {new_file_path}")
 
 ```python
 print("\nReading file line by line:")
-with open("my_data.txt", "r") as f: # Using 'with' statement for auto-closing
-  for line in f:
-      print(f"Line: {line.strip()}") # .strip() removes leading/trailing whitespace like newline chars
+with open("my_data.txt", "r") as f:  # Using 'with' statement for auto-closing
+    for line in f:
+        print(f"Line: {line.strip()}")  # .strip() removes leading/trailing whitespace like newline chars
 ```
 
 The `with open(...) as ...:` statement is the preferred way to handle files in Python. It ensures that the file is
@@ -127,21 +127,21 @@ program crash.
 
 ```python
 try:
-  num1_str = input("Enter a number: ")
-  num2_str = input("Enter another number: ")
-  num1 = int(num1_str)
-  num2 = int(num2_str)
-  result = num1 / num2
+    num1_str = input("Enter a number: ")
+    num2_str = input("Enter another number: ")
+    num1 = int(num1_str)
+    num2 = int(num2_str)
+    result = num1 / num2
 except ValueError:
-  print("Invalid input! Please enter valid integers.")
+    print("Invalid input! Please enter valid integers.")
 except ZeroDivisionError:
-  print("Error: Cannot divide by zero!")
-except Exception as e: # Catch any other unexpected exception
-  print(f"An unexpected error occurred: {e}")
+    print("Error: Cannot divide by zero!")
+except Exception as e:  # Catch any other unexpected exception
+    print(f"An unexpected error occurred: {e}")
 else:
-  print(f"The division result is: {result}")
+    print(f"The division result is: {result}")
 finally:
-  print("Calculation attempt finished.") # This always runs
+    print("Calculation attempt finished.")  # This always runs
 ```
 
 ### 4\. Exception Object
@@ -166,14 +166,15 @@ catch this object to inspect details about the problem.
 
 ```python
 def process_positive_number(num):
-  if num < 0:
-      raise ValueError("Input number must be positive!")
-  print(f"Processing number: {num}")
+    if num < 0:
+        raise ValueError("Input number must be positive!")
+    print(f"Processing number: {num}")
+
 
 try:
-  process_positive_number(-5)
+    process_positive_number(-5)
 except ValueError as e:
-  print(f"Error: {e}")
+    print(f"Error: {e}")
 
 process_positive_number(10)
 ```

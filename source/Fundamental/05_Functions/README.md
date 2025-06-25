@@ -51,13 +51,14 @@ the console, writing to a file, or modifying an object.
 
 ```python
 def display_menu():
-  print("--- Main Menu ---")
-  print("1. Start Game")
-  print("2. Options")
-  print("3. Exit")
-  print("-----------------")
+    print("--- Main Menu ---")
+    print("1. Start Game")
+    print("2. Options")
+    print("3. Exit")
+    print("-----------------")
 
-display_menu() # Call the void function
+
+display_menu()  # Call the void function
 ```
 
 * **The `def` keyword and function naming conventions**:
@@ -77,15 +78,16 @@ program that called it. This result is known as the **return value**.
 
 ```python
 def add_numbers(num1, num2):
-  result = num1 + num2
-  return result # Return the calculated sum
+    result = num1 + num2
+    return result  # Return the calculated sum
+
 
 # Calling the function and storing its return value
 sum_value = add_numbers(10, 5)
-print("The sum is:", sum_value) # Output: The sum is: 15
+print("The sum is:", sum_value)  # Output: The sum is: 15
 
 # You can also use the return value directly
-print("Another sum:", add_numbers(20, 30)) # Output: Another sum: 50
+print("Another sum:", add_numbers(20, 30))  # Output: Another sum: 50
 ```
 
 A function can return any Python object, including numbers, strings, lists, or even other functions.
@@ -130,8 +132,9 @@ introduce(name="Charlie", age=35)
 
 ```python
 def my_function():
-  local_var = 10
-  print(local_var)
+    local_var = 10
+    print(local_var)
+
 
 my_function()
 # print(local_var) # This would cause an error because local_var is not defined outside the function
@@ -149,17 +152,20 @@ While local variables are preferred, sometimes you might encounter or need to us
 ```python
 global_message = "Hello from global!"
 
+
 def read_global():
-  print(global_message) # Can read global_message
+    print(global_message)  # Can read global_message
+
 
 def modify_global():
-  # global_message = "New global message" # This would create a new LOCAL variable!
-  global global_message # Declare intent to modify the global variable
-  global_message = "Modified global message inside function."
+    # global_message = "New global message" # This would create a new LOCAL variable!
+    global global_message  # Declare intent to modify the global variable
+    global_message = "Modified global message inside function."
 
-read_global()       # Output: Hello from global!
+
+read_global()  # Output: Hello from global!
 modify_global()
-print(global_message) # Output: Modified global message inside function.
+print(global_message)  # Output: Modified global message inside function.
 ```
 
 * **Constants**: In Python, constants are typically global variables whose names are written in
@@ -170,8 +176,10 @@ print(global_message) # Output: Modified global message inside function.
 PI = 3.14159
 TAX_RATE = 0.07
 
+
 def calculate_circle_area(radius):
-  return PI * (radius ** 2)
+    return PI * (radius ** 2)
+
 
 area = calculate_circle_area(5)
 print(f"Area: {area}")
