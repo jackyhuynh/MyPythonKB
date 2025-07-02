@@ -30,6 +30,7 @@ The basic workflow for file operations involves three steps:
         * `"x"`: Exclusive creation mode. Creates a new file, but errors if the file already exists.
         * `"b"`: Binary mode (e.g., `"rb"`, `"wb"`). For non-text files like images or executables.
         * `"t"`: Text mode (default). For text files.
+        * `"r+"`: Read and write mode. File must exist.
     * The `open()` function returns a **file object** which you'll use for operations.
 
 <!-- end list -->
