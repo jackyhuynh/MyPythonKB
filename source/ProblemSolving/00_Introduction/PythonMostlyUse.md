@@ -74,6 +74,7 @@
 * **`datetime` Module (Recommended for Robust Time Handling):**
     * `import datetime`
 * Example:
+
 ```python
 import datetime
 time_points = ['01:00:00', '12:30:15']
@@ -84,9 +85,10 @@ diff_time_list = [
   for t in time_list
 ]
 ```
-  *Note: `datetime.datetime(100,1,1,...)` uses an arbitrary year/month/day to create a time object.*
-  *Note: The original example for `diff_time_list` was slightly off. `seconds` should be `seconds_to_add` for
-  clarity.*
+
+*Note: `datetime.datetime(100,1,1,...)` uses an arbitrary year/month/day to create a time object.*
+*Note: The original example for `diff_time_list` was slightly off. `seconds` should be `seconds_to_add` for
+clarity.*
 
 ### VI. Other Concepts
 

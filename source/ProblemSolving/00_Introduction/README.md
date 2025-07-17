@@ -1,6 +1,7 @@
 ## Coding Problem Solving for Beginners: The 4-Step Recipe
 
-For a beginner, we can boil down "How to Approach a Coding Problem" to a few core, easy-to-remember steps. Think of it like cooking:
+For a beginner, we can boil down "How to Approach a Coding Problem" to a few core, easy-to-remember steps. Think of it
+like cooking:
 
 ### 1. Understand the Request (Read, Understand, Example!)
 
@@ -19,7 +20,8 @@ For a beginner, we can boil down "How to Approach a Coding Problem" to a few cor
     * "Then, I'll check if it's too big or too small."
     * "If it's wrong, I'll ask again."
     * "If it's right, I'll do the calculation."
-* **Think about the "tools":** What Python commands or concepts might you use? (e.g., `if` statements, `for` loops, `while` loops, basic math, `print()`)
+* **Think about the "tools":** What Python commands or concepts might you use? (e.g., `if` statements, `for` loops,
+  `while` loops, basic math, `print()`)
 
 ### 3. Write the Code (Type it Out!)
 
@@ -30,15 +32,18 @@ For a beginner, we can boil down "How to Approach a Coding Problem" to a few cor
 ### 4. Test and Check (Did it Work?!)
 
 * **Run Your Code:** Execute your program.
-* **Use Your Examples:** Type in the examples you worked out in Step 1. Does your code give the *same answer* you expected?
+* **Use Your Examples:** Type in the examples you worked out in Step 1. Does your code give the *same answer* you
+  expected?
 * **Try Different Cases:**
     * What if the input is really small?
     * What if it's really big?
     * What if someone types text when you expect a number? (This is called "error handling" and you'll learn it soon!)
-* **Fix Mistakes:** If it doesn't work, that's normal! It means you found a bug. Look at the error message, go back to your code, and figure out what went wrong.
+* **Fix Mistakes:** If it doesn't work, that's normal! It means you found a bug. Look at the error message, go back to
+  your code, and figure out what went wrong.
 
 ---
 
-**The Golden Rule for Beginners:** **Don't start typing code until you know what you're trying to do and have a basic plan.**
+**The Golden Rule for Beginners:** **Don't start typing code until you know what you're trying to do and have a basic
+plan.**
 
 Good luck! You've got this.
