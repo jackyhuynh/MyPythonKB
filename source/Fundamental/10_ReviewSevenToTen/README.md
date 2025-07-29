@@ -5,23 +5,32 @@ data structures (lists, tuples, dictionaries), and string manipulation in Python
 
 ## I. Object-Oriented Programming (OOP) Concepts
 
-1. Mutator methods are also known as: What is their purpose in a class?
-2. Which method is automatically called when you pass an object as an argument to the print function?
+1. Mutator methods are also known as: What is their purpose in a class? setter methods
+   - They are used to set or update the value of an object's attributes.
+2. Which method is automatically called when you pass an object as an argument to the print function? - __str__ method
+   - This method returns a string representation of the object, which is used by the print function.
 3. What can be thought of as a self-contained unit that consists of data attributes and the methods that operate on the
-   data attributes?
-4. The procedures that an object performs are called?
-5. What does the acronym UML stand for?
-6. Which section in the UML holds the list of the class's data attributes?
-7. What type of programming contains class definitions?
-8. How do you create an object named worker_joey from a Worker class?
+   data attributes? - A class
+4. The procedures that an object performs are called? - Methods
+   - Methods are functions defined within a class that operate on the data attributes of the class.
+5. What does the acronym UML stand for? - Unified Modeling Language
+   - UML is a standardized modeling language used to visualize the design of a system.
+6. Which section in the UML holds the list of the class's data attributes? - Attributes section
+   - This section lists the data attributes of the class, including their types and visibility (public, private, etc.).
+7. What type of programming contains class definitions? - Object-oriented programming (OOP)
+   - OOP is a programming paradigm that uses classes and objects to structure code.
+8. How do you create an object named worker_joey from a Worker class? - worker_joey = Worker()
+   - This statement creates an instance of the Worker class and assigns it to the variable worker_joey.
 9. Practice: Write a setter/mutator method and a getter/accessor method for a private _book_title attribute within a
    Book class.
 
 ## II. Data Structures: Lists
 
-1. Which method or operator can be used to concatenate lists?
-2. Which method can be used to place an item at a specific index in a list?
-3. When working with multiple sets of data, one would typically use a(n):
+1. Which method or operator can be used to concatenate lists? - The `+` operator or the `extend()` method
+   - The `+` operator combines two lists into one, while `extend()` appends elements from one list to another.
+2. Which method can be used to place an item at a specific index in a list? - The `insert(index, item)` method
+   - This method inserts an item at the specified index in the list, shifting subsequent elements to the right.
+3. When working with multiple sets of data, one would typically use a(n): - Nested List
 4. What will be the value of number after number = range(0, 9, 2) executes?
 5. Given my_string = '03/07/2018' and list_strip = my_string.split('/'), what will list_strip reference?
 6. Analyze the following code:
@@ -34,7 +43,7 @@ for element in list1:
     list2.append(element)
     list1 = [4, 5, 6]
 ```
-
+- [1,2,3]
 What will be the value of list2 after this code executes?
 
 7. Practice:
@@ -43,23 +52,33 @@ What will be the value of list2 after this code executes?
 
 ## III. Data Structures: Tuples
 
-1. What is an advantage of using a tuple rather than a list?
-2. Which method can be used to convert a list to a tuple?
-3. Which method can be used to convert a tuple to a list?
+1. What is an advantage of using a tuple rather than a list? - Faster access and less memory usage
+2. Which method can be used to convert a list to a tuple? - The `tuple()` function
+3. Which method can be used to convert a tuple to a list? - The `list()` function
 4. Practice:
     - Assume our_tuple references a tuple. Write a statement that converts it to a list called our_list.
+   our_list = list(our_tuple)
 
 ## IV. Data Structures: Dictionaries
 
-1. Which method would you use to get all the elements in a dictionary returned as a list of tuples?
+1. Which method would you use to get all the elements in a dictionary returned as a list of tuples? - The `items()` method
+```python
+my_dict = {"string": "value", "number": 42}
+for key, value in my_dict.items():
+    print((key, value))
+
+len(my_dict.items())
+my_dict.length()
+```
 2. Which function would you use to get the number of elements in a dictionary?
 3. Analyze the following code:
 
 ```aiignore
 cities = {'GA': 'Atlanta', 'NY': 'Albany', 'CA': 'San Diego'}
 if 'CA' in cities:
-del cities['CA']
-cities['CA'] = 'Sacramento'
+    del cities['CA']
+    cities['CA'] = 'Sacramento'
+    
 print(cities)
 ```
 
@@ -72,7 +91,8 @@ What will be displayed after this code executes? (Note: the order of dictionary 
 
 ## V. String Manipulation
 
-1. What will be assigned to s_string after special = '1357 Country Ln.' and s_string = special[:4] executes?
+1. What will be assigned to s_string after special = '1357 Country Ln.' and s_string = special[:4] executes? - 1357
+   - The slicing operation `special[:4]` extracts the first four characters from the string, which are '1357'.
 2. What will be displayed after the following code executes?
 
 ```python 
@@ -82,14 +102,13 @@ mystr += yourstr * 2
 print(mystr)
 ```
 
-3. What will be assigned to some_nums after special = '0123456789' and some_nums = special[0:10:2] executes?
+3. What will be assigned to some_nums after special = '0123456789' and some_nums = special[0:10:2] executes? - Answer: 02468
 4. Practice:
     - Assume big references a string. Write a statement that converts the string it references to lowercase and assigns
-      the
-      converted string to the variable little.
+      the converted string to the variable little.
     - Write Python code that asks the user to enter a series of single-digit numbers without separation (e.g., "2514").
-      The
-      program should then display the sum of these digits.
+      The program should then display the sum of these digits.
 
 ## VI. File Handling
-What is the process used to convert an object to a stream of bytes that can be saved in a file?
+What is the process used to convert an object to a stream of bytes that can be saved in a file? - pickling
+   - Pickling is the process of serializing an object into a byte stream, which can then be saved to a file.
